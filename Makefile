@@ -45,7 +45,7 @@ commit: .gitattributes
 
 # This brings the local copy into sync with the remote (master)
 pull: .gitattributes
-	git pull origin master
+	git pull ae-drive-inspector master
 
 version.txt:
 	git describe --dirty --always --tags > version.txt
