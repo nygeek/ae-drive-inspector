@@ -11,10 +11,15 @@ else
 endif
 
 # Python version
-PYTHON := python3
+PYTHON := python
 
-DIRS = "."
-DIRPATH="~/projects/d/drive-inspector/src"
+REPO := ae-drive-inspector
+
+FILES = \
+	Makefile \
+	.gitattributes \
+	README.md \
+	LICENSE
 
 .PHONY: help
 help:
@@ -33,7 +38,7 @@ status:
 # this brings the remote copy into sync with the local one
 commit: .gitattributes
 	git commit ${FILES}
-	git push -u origin master 
+	git push -u ${REPO} master 
 	git push --tags
 	git describe --dirty --always --tags > version.txt
 
