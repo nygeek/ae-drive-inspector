@@ -18,6 +18,7 @@ REPO := ae-drive-inspector
 FILES = \
 	Makefile \
 	.gitattributes \
+	.gitignore \
 	README.md \
 	LICENSE
 
