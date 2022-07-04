@@ -1,14 +1,15 @@
 Started: 2018-05-06
 Port to AppEngine: 2022-07-04
 
-Language: Python 3.6
-As a steady user of Google Drive over the last several years, I have accumulated a large number of files in My Drive.
+Language: Python 3.9.5
+
+As a user of Google Drive over the last several years, I have accumulated a large number of files in My Drive.
 
 One of the questions that I have asked myself from time to time is how to create an inventory of all of my files suitable for analysis.
 
 There is no simple way to do this in Drive. Some years ago I tried writing one in AppScript, but there were then limitations in the API and there were performance problems, so I ultimately abandoned the effort.
 
-Recently I found the RESTful API to Google Drive (v3) [https://developers.google.com/drive/v3/web/about-sdk] and decided to try again using Python.
+After buiding a Python app using the RESTful API to Google Drive (v3) [https://developers.google.com/drive/v3/web/about-sdk] and getting it to work, I've recently decided to try getting it working as an AppServer application so that I can make it more easily available to non-geeks.
 
 This utility is intended as a tool to allow you to inspect and analyze (read only) the metadata about your Drive portfolio.
 
