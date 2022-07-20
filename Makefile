@@ -19,6 +19,9 @@ FILES = \
 	Makefile \
 	.gitattributes \
 	.gitignore \
+	app.yaml \
+	driveshell.py \
+	main.py \
 	README.md \
 	LICENSE
 
